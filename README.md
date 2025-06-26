@@ -7,6 +7,4 @@
 ## 📦 Install via APT
 
 ```bash
-echo "deb [trusted=yes] https://bhuvaneshm-dev.github.io/cosmo4u stable main" | sudo tee /etc/apt/sources.list.d/cosmo4u.list
-sudo apt update
-sudo apt install cosmo4u
+wget -O cosmo4u.deb https://github.com/bhuvanesh-m-dev/cosmo4u/releases/download/v0.0.1/cosmo4u_0.0.1_amd64.deb && sudo dpkg -i cosmo4u.deb || sudo apt --fix-broken install
